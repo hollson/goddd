@@ -1,4 +1,4 @@
-package crosscutting
+package config
 
 import (
 	"fmt"
@@ -14,7 +14,7 @@ import (
 
 func StartUp() {
 
-	viper.SetConfigFile("conf/config.yaml")
+	viper.SetConfigFile("config/config.yaml")
 	viper.SetConfigType("yaml")
 	err := viper.ReadInConfig()
 	if err != nil {

@@ -14,8 +14,8 @@ const FileRootPath = "/data/kendoDDD/"
 var SingleFilesAgg *filesAggregate
 
 // 仓储（能封装成工作单元更好）
-var captchaRepo = infrastructure.RepoFac.CaptchaRepo
-var fileRepos = infrastructure.RepoFac.FilesRepo
+var captchaRepo = infra.RepoFac.CaptchaRepo
+var fileRepos = infra.RepoFac.FilesRepo
 
 func getcontentType(fileName string) (contentType string) {
 	if strings.HasSuffix(fileName, ".bmp") {

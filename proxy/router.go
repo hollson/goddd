@@ -1,4 +1,4 @@
-package presentation
+package proxy
 
 import (
 	"math/rand"
@@ -11,7 +11,7 @@ import (
 
 //表现层主要的职责在于，表现形式的多样化。
 
-func InitRouter() *gin.Engine {
+func NewGinSerer() *gin.Engine {
 
 	if viper.GetString("APP_MODE") == "prod" {
 		gin.SetMode(gin.ReleaseMode)

@@ -1,26 +1,24 @@
 package main
 
 import (
-	"github.com/hollson/goddd/crosscutting"
-	"github.com/hollson/goddd/presentation"
-	"github.com/spf13/viper"
-	"golang.org/x/sync/errgroup"
+    "github.com/hollson/goddd/config"
+    "github.com/hollson/goddd/proxy"
+    "golang.org/x/sync/errgroup"
 )
 
 func main() {
-	crosscutting.StartUp()
-	g := new(errgroup.Group)
-	g.Go(func() error {
-		router := presentation.InitRouter()
-		return router.Run(":" + viper.GetString("APP_PORT"))
-	})
+    config.StartUp()
 
-	// g.Go(func() error {
-	// 	err := presentation.InitRPC()
-	// 	return err
-	// })
+    var group errgroup.Group
+    group.Go(func() error {
+        return proxy.NewGinSerer().Run(":8080")
+    })
 
-	if err := g.Wait(); err != nil {
-		panic(err)
-	}
+    group.Go(func() error {
+        return proxy.NewGrpcServer().Run(":8082")
+    })
+
+    if err := group.Wait(); err != nil {
+        panic(err)
+    }
 }
