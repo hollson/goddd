@@ -33,7 +33,7 @@ commit:
 .PHONY:push
 push:commit
 	@git push #origin master
-	@echo "\033[0;31m ⬆️ Push完毕\033[0m"
+	@echo "\033[0;31m 📡 Push完毕\033[0m"
 
 
 ## help@查看make帮助。
