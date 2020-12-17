@@ -3,7 +3,6 @@ package repos_mysql
 import (
 	"time"
 
-	"github.com/KendoCross/kendoDDD/interfaces"
 )
 
 type fileRepo struct {

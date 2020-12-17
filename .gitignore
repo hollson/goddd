@@ -4,6 +4,4 @@
 auth_srv.*
 __debug_bin
 go.sum
-
-
-auth_srv
+goddd-server

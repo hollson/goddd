@@ -8,7 +8,6 @@ import (
 	eh "github.com/looplab/eventhorizon"
 	"github.com/looplab/eventhorizon/aggregatestore/events"
 
-	"github.com/KendoCross/kendoDDD/infrastructure/bus"
 )
 
 ///这种实现，才更契合聚合根的思路！

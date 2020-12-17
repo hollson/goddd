@@ -1,9 +1,9 @@
 package infrastructure
 
 import (
-	"github.com/KendoCross/kendoDDD/infrastructure/repos_mysql"
-	"github.com/KendoCross/kendoDDD/infrastructure/repos_redis"
-	"github.com/KendoCross/kendoDDD/interfaces"
+	"github.com/hollson/goddd/infrastructure/repos_mysql"
+	"github.com/hollson/goddd/infrastructure/repos_redis"
+	"github.com/hollson/goddd/interfaces"
 )
 
 func init() {

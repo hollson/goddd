@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/KendoCross/kendoDDD/infrastructure/bus"
-	"github.com/KendoCross/kendoDDD/infrastructure/logs"
-	"github.com/KendoCross/kendoDDD/interfaces"
+
 	"github.com/google/uuid"
+	"github.com/hollson/goddd/infrastructure/bus"
+	"github.com/hollson/goddd/interfaces"
 	eh "github.com/looplab/eventhorizon"
 	"github.com/looplab/eventhorizon/aggregatestore/events"
 )

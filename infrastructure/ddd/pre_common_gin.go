@@ -7,9 +7,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/KendoCross/kendoDDD/infrastructure/errorext"
 	"github.com/gin-gonic/gin"
 	"github.com/go-playground/validator/v10"
+	"github.com/hollson/goddd/infrastructure/errorext"
 )
 
 var (

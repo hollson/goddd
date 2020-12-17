@@ -1,7 +1,7 @@
 #dev | test | beta | prod
 APP_MODE: dev
-APP_PORT: 18080
-GRPC_PORT: 18081
+APP_PORT: 8080
+GRPC_PORT: 8081
 LOG_FILE: /var/log/processor/processor.log
 
 #数据库配置

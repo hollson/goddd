@@ -3,8 +3,7 @@ package repos_mysql
 import (
 	"fmt"
 
-	"github.com/KendoCross/kendoDDD/infrastructure/logs"
-
+	"github.com/hollson/goddd/infrastructure/logs"
 	"github.com/spf13/viper"
 
 	_ "github.com/go-sql-driver/mysql"

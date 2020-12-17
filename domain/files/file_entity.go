@@ -4,9 +4,9 @@ import (
 	"io/ioutil"
 	"time"
 
-	"github.com/KendoCross/kendoDDD/infrastructure/helper"
-	"github.com/KendoCross/kendoDDD/interfaces"
 	"github.com/google/uuid"
+	"github.com/hollson/goddd/infrastructure/helper"
+	"github.com/hollson/goddd/interfaces"
 )
 
 func newfileEnByOV(fileInfo interfaces.FileInfo) *fileEntity {

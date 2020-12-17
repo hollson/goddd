@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/KendoCross/kendoDDD/crosscutting"
-	"github.com/KendoCross/kendoDDD/presentation"
+	"github.com/hollson/goddd/crosscutting"
+	"github.com/hollson/goddd/presentation"
 	"github.com/spf13/viper"
 	"golang.org/x/sync/errgroup"
 )
@@ -23,5 +23,4 @@ func main() {
 	if err := g.Wait(); err != nil {
 		panic(err)
 	}
-
 }

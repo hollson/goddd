@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/KendoCross/kendoDDD/infrastructure/bus"
+	"github.com/hollson/goddd/infrastructure/bus"
 	eh "github.com/looplab/eventhorizon"
 )
 

@@ -3,7 +3,7 @@ package files
 import (
 	"strings"
 
-	"github.com/KendoCross/kendoDDD/infrastructure"
+	"github.com/hollson/goddd/infrastructure"
 	eh "github.com/looplab/eventhorizon"
 )
 
