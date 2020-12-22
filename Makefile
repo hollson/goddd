@@ -1,4 +1,4 @@
-all: run
+all: help
 
 ## build <os>@编译(格式：make build os=linux/darwin/windows,os为可选参数)。
 .PHONY:build

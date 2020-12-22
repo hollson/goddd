@@ -1,12 +1,13 @@
-package api
+package handler
 
 import (
 	"fmt"
 	"net/http"
 
-	"github.com/KendoCross/kendoDDD/application"
-	"github.com/KendoCross/kendoDDD/infrastructure/errorext"
+
 	"github.com/gin-gonic/gin"
+	"github.com/hollson/goddd/application"
+	"github.com/hollson/goddd/infrastructure/errorext"
 )
 
 func GetFile(c *gin.Context) {

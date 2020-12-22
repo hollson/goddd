@@ -7,6 +7,7 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/hollson/goddd/infrastructure/bus"
+	"github.com/hollson/goddd/infrastructure/logs"
 	"github.com/hollson/goddd/interfaces"
 	eh "github.com/looplab/eventhorizon"
 	"github.com/looplab/eventhorizon/aggregatestore/events"

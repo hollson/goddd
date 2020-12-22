@@ -4,7 +4,7 @@
 package application
 
 import (
-	"github.com/KendoCross/kendoDDD/domain/testcmd"
+	"github.com/hollson/goddd/domain/testcmd"
 	eh "github.com/looplab/eventhorizon"
 )
 

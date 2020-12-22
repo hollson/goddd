@@ -3,7 +3,6 @@ module github.com/hollson/goddd
 go 1.15
 
 require (
-	github.com/KendoCross/kendoDDD v0.0.0-20201129142515-65b4ad21f637
 	github.com/astaxie/beego v1.12.3
 	github.com/gin-contrib/cors v1.3.1
 	github.com/gin-gonic/gin v1.6.3

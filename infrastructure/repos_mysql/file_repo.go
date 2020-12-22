@@ -3,6 +3,7 @@ package repos_mysql
 import (
 	"time"
 
+	"github.com/hollson/goddd/interfaces"
 )
 
 type fileRepo struct {

@@ -4,6 +4,7 @@ import (
     "context"
     "encoding/json"
     "fmt"
+
     "google.golang.org/grpc"
     "google.golang.org/grpc/codes"
     "google.golang.org/grpc/metadata"
@@ -12,6 +13,7 @@ import (
 
 var IsProdMod = false
 
+// 拦截器
 func GrpcInterceptor(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (resp interface{}, err error) {
     defer func() {
         if r := recover(); r != nil {
@@ -34,7 +36,7 @@ func GrpcInterceptor(ctx context.Context, req interface{}, info *grpc.UnaryServe
     }
 
     resp, err = handler(ctx, req)
-    //logs.ConsoleLogs.Info("%s End...Err:%v \n", info.FullMethod, err)
+    // logs.ConsoleLogs.Info("%s End...Err:%v \n", info.FullMethod, err)
     return
 }
 
