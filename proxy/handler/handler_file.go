@@ -8,9 +8,10 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/hollson/goddd/application"
 	"github.com/hollson/goddd/infrastructure/errorext"
+	"log"
 )
 
-func GetFile(c *gin.Context) {
+func GetFileHandler(c *gin.Context) {
 	rst, has, err := application.GetFileById(c.Param("id"))
 	if err != nil {
 		c.Error(err)
@@ -25,9 +26,10 @@ func GetFile(c *gin.Context) {
 	c.File(rst.FilePath)
 }
 
-func AddFile(c *gin.Context) {
+func AddFileHandler(c *gin.Context) {
 	var parm application.AddFileForm
 	if err := c.ShouldBind(&parm); err != nil {
+		log.Println("===========",err)
 		c.AbortWithError(http.StatusBadRequest, err).SetType(gin.ErrorTypeBind)
 		return
 	}

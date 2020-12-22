@@ -3,9 +3,9 @@ package config
 import (
     "fmt"
 
-    mysql "github.com/hollson/goddd/infrastructure/repos_mysql"
     "github.com/hollson/goddd/domain"
     "github.com/hollson/goddd/infrastructure/logs"
+    mysql "github.com/hollson/goddd/infrastructure/repos_mysql"
 
     "github.com/spf13/viper"
 )

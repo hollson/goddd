@@ -2,14 +2,14 @@
 APP_MODE: dev
 APP_PORT: 8080
 GRPC_PORT: 8081
-LOG_FILE: /var/log/processor/processor.log
+LOG_FILE: ./tmp/goddd.log
 
 #数据库配置
-MYSQL_DSN: root:sa@tcp(127.0.0.1:3306)/mydb?charset=utf8mb4&loc=Local&parseTime=true&timeout=3s
+MYSQL_DSN: root:123456@tcp(127.0.0.1:3306)/goddd?charset=utf8mb4&loc=Local&parseTime=true&timeout=3s
 MYSQL_MAXOPEN: 15
 MYSQL_MAXIDLE: 3
 
 #Redis配置
 REDIS_ADDR: redis:6379
-REDIS_PSW: qDf9s
+#REDIS_PSW: qDf9s
 REDIS_DB: 0

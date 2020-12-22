@@ -5,3 +5,4 @@ auth_srv.*
 __debug_bin
 go.sum
 goddd-server
+tmp

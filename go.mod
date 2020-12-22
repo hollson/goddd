@@ -12,6 +12,7 @@ require (
 	github.com/go-xorm/xorm v0.7.9
 	github.com/google/uuid v1.1.2
 	github.com/looplab/eventhorizon v0.8.0
+	github.com/prometheus/common v0.10.0
 	github.com/spf13/viper v1.7.1
 	golang.org/x/sync v0.0.0-20201020160332-67f06af15bc9
 	google.golang.org/grpc v1.33.2
