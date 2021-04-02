@@ -4,11 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
-
 	"github.com/gin-gonic/gin"
 	"github.com/hollson/goddd/application"
 	"github.com/hollson/goddd/infrastructure/errorext"
-	"log"
 )
 
 func GetFileHandler(c *gin.Context) {
@@ -29,7 +27,6 @@ func GetFileHandler(c *gin.Context) {
 func AddFileHandler(c *gin.Context) {
 	var parm application.AddFileForm
 	if err := c.ShouldBind(&parm); err != nil {
-		log.Println("===========",err)
 		c.AbortWithError(http.StatusBadRequest, err).SetType(gin.ErrorTypeBind)
 		return
 	}

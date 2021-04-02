@@ -11,11 +11,11 @@ func main() {
 
     var group errgroup.Group
     group.Go(func() error {
-        return proxy.NewGinSerer().Run(":8080")
+        return presentation.NewGinSerer().Run(":8080")
     })
 
     group.Go(func() error {
-        return proxy.NewGrpcServer().Run(":8082")
+        return presentation.NewGrpcServer().Run(":8082")
     })
 
     if err := group.Wait(); err != nil {

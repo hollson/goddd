@@ -34,10 +34,10 @@ func InitDB() {
     writeEngine.SetMaxIdleConns(viper.GetInt("MYSQL_MAXIDLE"))
     writeEngine.SetMaxOpenConns(viper.GetInt("MYSQL_MAXOPEN"))
 
-    // if viper.GetString("APP_MODE") != "prod" {
-    readEngine.ShowSQL(true)
-    writeEngine.ShowSQL(true)
-    // }
+    if viper.GetBool("MYSQL_SHOWSQL") {
+        readEngine.ShowSQL(true)
+        writeEngine.ShowSQL(true)
+    }
 
-    writeEngine.Sync(interfaces.FileInfo{})
+    writeEngine.Sync2(new(interfaces.FileInfo))
 }

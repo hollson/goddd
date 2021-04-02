@@ -104,11 +104,9 @@ func ConvertInt642Ints(slc []int64) []int {
 func IsValInArr(val interface{}, array interface{}) (exists bool, index int) {
 	exists = false
 	index = -1
-
 	switch reflect.TypeOf(array).Kind() {
 	case reflect.Slice:
 		s := reflect.ValueOf(array)
-
 		for i := 0; i < s.Len(); i++ {
 			if reflect.DeepEqual(val, s.Index(i).Interface()) {
 				index = i
@@ -117,6 +115,5 @@ func IsValInArr(val interface{}, array interface{}) (exists bool, index int) {
 			}
 		}
 	}
-
 	return
 }

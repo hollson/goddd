@@ -8,6 +8,7 @@ LOG_FILE: ./tmp/goddd.log
 MYSQL_DSN: root:123456@tcp(127.0.0.1:3306)/goddd?charset=utf8mb4&loc=Local&parseTime=true&timeout=3s
 MYSQL_MAXOPEN: 15
 MYSQL_MAXIDLE: 3
+MYSQL_SHOWSQL: true
 
 #Redis配置
 REDIS_ADDR: redis:6379
