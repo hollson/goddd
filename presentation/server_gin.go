@@ -2,8 +2,8 @@ package presentation
 
 import (
     "github.com/gin-gonic/gin"
-    "github.com/hollson/goddd/proxy/handler"
-    "github.com/spf13/viper"
+	"github.com/hollson/goddd/presentation/handler"
+	"github.com/spf13/viper"
 )
 
 // 表现层主要的职责在于，表现形式的多样化。

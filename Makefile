@@ -4,7 +4,7 @@ all: help
 .PHONY:build
 build:
 	# a:强制重新编译
-	@CGO_ENABLED=0 GOOS=linux  GOARCH=amd64 go build -a -installsuffix cgo -o goddd-server
+	@CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -o goddd-server
 
 
 ## run@运行服务。

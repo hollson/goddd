@@ -4,8 +4,8 @@ import (
     "log"
     "net"
 
-    "github.com/hollson/goddd/proxy/middleware"
-    "github.com/spf13/viper"
+	"github.com/hollson/goddd/presentation/middleware"
+	"github.com/spf13/viper"
     "google.golang.org/grpc"
 )
 

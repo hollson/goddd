@@ -2,8 +2,8 @@ package main
 
 import (
     "github.com/hollson/goddd/config"
-    "github.com/hollson/goddd/proxy"
-    "golang.org/x/sync/errgroup"
+	"github.com/hollson/goddd/presentation"
+	"golang.org/x/sync/errgroup"
 )
 
 func main() {
